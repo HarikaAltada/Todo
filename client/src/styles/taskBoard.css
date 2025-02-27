@@ -1,0 +1,31 @@
+.task-board {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    width: 97%;
+}
+
+.task-summary-column,
+.task-column {
+    flex: 1; /* Ensures equal width */
+    min-width: 0; /* Prevents overflow issues */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .task-board {
+        flex-direction: column; /* Stack columns on smaller screens */
+        align-items: center;
+        padding: 0%;
+        padding-top: 10px;
+    }
+
+    .task-summary-column{
+        width: 100%;
+    }
+    .task-column {
+        width: 80%; /* Take full width on smaller screens */
+    }
+}

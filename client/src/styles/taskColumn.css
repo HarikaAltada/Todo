@@ -1,0 +1,33 @@
+.task-column {
+    background: #ECEDEE;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    overflow-y: auto;
+    height: 575px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/* Responsive styles */
+@media (min-width: 768px) {
+    .task-column {
+        width: 45%; /* Adjust width for tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    .task-column {
+        width: 30%; /* Restore original width for larger screens */
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
